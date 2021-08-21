@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import loadable from '@loadable/component';
 import PageLoading from './components/PageLoading';
+import './App.css';
 
 const loadbleOptions = { fallback: <PageLoading /> };
 const Home = loadable(() => import('./pages'), loadbleOptions);
